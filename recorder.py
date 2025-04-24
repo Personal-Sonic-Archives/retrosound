@@ -27,7 +27,7 @@ BUTTON_PIN = 2
 audio_buffer = queue.Queue(maxsize=int(RATE / CHUNK * BUFFER_SECONDS))
 
 is_recording = False
-keyboard_enabled = True  # Set to False if you only want to use GPIO button
+keyboard_enabled = False # for testing
 stop_program = False
 
 def setup_gpio():
@@ -85,9 +85,6 @@ def keyboard_listener():
         # Restore terminal settings
         termios.tcsetattr(sys.stdin, termios.TCSADRAIN, old_settings)
 
-def voice_detection():
-    pass
-
 def find_best_microphone(p):
     """Find the best available microphone
     
@@ -112,7 +109,7 @@ def find_best_microphone(p):
             # Give priority to devices that seem like dedicated microphones
             if 'mic' in dev_name or 'microphone' in dev_name:
                 priority += 3
-            if 'array' in dev_name:  # Microphone arrays are good quality
+            if 'array' in dev_name:  # Microphone arrays are better quality
                 priority += 2
             if 'usb' in dev_name:  # USB mics are usually external and better quality
                 priority += 1
