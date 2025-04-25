@@ -1,2 +1,3 @@
-pyaudio
-RPi.GPIO
+pyaudio==0.2.13
+vosk==0.3.45
+RPi.GPIO==0.7.1
