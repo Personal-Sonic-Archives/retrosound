@@ -27,3 +27,6 @@ For the edit, if you dont have the app, use ther terminal and type nano wpa_supp
 
 file will open in the terminal like this
 <img width="584" height="367" alt="image" src="https://github.com/user-attachments/assets/f6269c18-64c1-46e7-993e-a704d39ecf5e" />
+
+
+
