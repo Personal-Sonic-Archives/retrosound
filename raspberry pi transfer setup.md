@@ -22,3 +22,8 @@ Instructions for how I transfered the raspberry 3 to raspberry 4. I did this on 
 it probably appears in your mac 
 <img width="604" height="299" alt="image" src="https://github.com/user-attachments/assets/cce39aa9-c68b-4fee-a125-f018cf945b72" />
 
+
+For the edit, if you dont have the app, use ther terminal and type nano wpa_supplicant.conf
+
+file will open in the terminal like this
+<img width="584" height="367" alt="image" src="https://github.com/user-attachments/assets/f6269c18-64c1-46e7-993e-a704d39ecf5e" />
